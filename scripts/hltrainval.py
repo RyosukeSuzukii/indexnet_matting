@@ -45,11 +45,11 @@ from torchvision import transforms
 from torch.utils.data import DataLoader
 from torch.optim.lr_scheduler import StepLR, MultiStepLR
 
-from lib.nn import patch_replication_callback
-from hlmobilenetv2 import hlmobilenetv2
-from hlvggnet import hlvgg16
-from hldataset import AdobeImageMattingDataset, RandomCrop, RandomFlip, Normalize, ToTensor
-from utils import *
+from .lib.nn import patch_replication_callback
+from .hlmobilenetv2 import hlmobilenetv2
+from .hlvggnet import hlvgg16
+from .hldataset import AdobeImageMattingDataset, RandomCrop, RandomFlip, Normalize, ToTensor
+from .utils import *
 
 # prevent dataloader deadlock
 cv.setNumThreads(0)
