@@ -38,9 +38,9 @@ from matplotlib import pyplot as plt
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from lib.nn import SynchronizedBatchNorm2d
+from .lib.nn import SynchronizedBatchNorm2d
 
-from hlconv import hlconv
+from .hlconv import hlconv
 
 class DeepLabDecoder(nn.Module):
     def __init__(self, conv_operator='std_conv', kernel_size=5, batch_norm=SynchronizedBatchNorm2d):

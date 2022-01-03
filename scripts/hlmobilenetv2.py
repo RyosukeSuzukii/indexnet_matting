@@ -43,12 +43,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from hlaspp import ASPP
-from lib.nn import SynchronizedBatchNorm2d
-from hlindex import HolisticIndexBlock, DepthwiseO2OIndexBlock, DepthwiseM2OIndexBlock
-from hldecoder import *
-from hlconv import *
-from modelsummary import get_model_summary
+from .hlaspp import ASPP
+from .lib.nn import SynchronizedBatchNorm2d
+from .hlindex import HolisticIndexBlock, DepthwiseO2OIndexBlock, DepthwiseM2OIndexBlock
+from .hldecoder import *
+from .hlconv import *
+from .modelsummary import get_model_summary
 
 try:
     from urllib import urlretrieve
